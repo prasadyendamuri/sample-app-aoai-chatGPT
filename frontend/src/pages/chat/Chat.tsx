@@ -774,8 +774,11 @@ const Chat = () => {
             {!messages || messages.length < 1 ? (
               <Stack className={styles.chatEmptyState}>
                 <img src={logo} className={styles.chatIcon} aria-hidden="true" />
-                <h1 className={styles.chatEmptyStateTitle}>{ui?.chat_title}</h1>
-                <h2 className={styles.chatEmptyStateSubtitle}>{ui?.chat_description}</h2>
+                <h1 className={styles.chatEmptyStateTitle}>Welcome, Jack Link's Team Members!</h1>
+                <h2 className={styles.chatEmptyStateSubtitle}>As we navigate the competitive landscape of the snack industry, it's crucial to understand the financial health and strategies of both our customers and competitors. Our in-depth analysis of financial documents, including 10-K and 10-Q filings, earnings call transcripts, and other disclosures, provides us with valuable insights that shape our approach to meeting market needs and strengthening Jack Link's position.
+                    <br /><br />
+                    Let's continue to feed our wild side by staying ahead of the curve and making data-driven decisions that cater to the dynamic landscape of our industry. Together, we'll keep Jack Link's at the forefront of the snack market! 
+                </h2>
               </Stack>
             ) : (
               <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? '40px' : '0px' }} role="log">
